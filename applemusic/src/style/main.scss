@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+$font-family-sans-serif: 'Quicksand', sans-serif;
+
+// Colori Apple
+$custom-color-1: #F25667;
+$custom-color-2: #D60017;
+$custom-color-3: #2E2E2E;
+$custom-color-4: #4D4D4D;
+
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Dimensione font, padding e margin
+$font-sizes: map-merge(
+  $font-sizes,
+  (
+    6: 1.75rem,
+    7: 2rem,
+    8: 2.25rem,
+    9: 2.5rem,
+    10: 3rem,
+  )
+);
+
+$spacers: map-merge(
+  $spacers,
+  (
+    6: 3.5rem,
+    7: 4rem,
+    8: 4.5rem,
+    9: 5rem,
+    10: 5.5rem,
+  )
+);
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "pink": $custom-color-1,
+    "red": $custom-color-2,
+    "gray": $custom-color-3,
+    "gray2": $custom-color-4,
+  )
+);
+
+// 5. Import full Bootstrap with custom config
+@import "bootstrap/scss/bootstrap";
